@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    /* inicia o modo flexbox */
+    flex-direction: row;
+    /* define a direção das caixas - row-reverse cola os dados na direita */
+    justify-content: center;
+    /* Alinha os itens, center -> coloca os itens no centro, end -> coloca os itens no final
+    space-around -> faz as caixas preencherem todos os espaços, deixando margem nas laterais
+    space-between -> faz as caixas preencherem todos os espaços, sem deixar margem nas laterais*/
+    flex-wrap: wrap;
+ 
+}
+
+.item {
+    /* Valor único, sem unidade: flex-grow ->  define a proporção com que um item deve crescer caso seja necessário, 
+    Por padrão seu valor é 0, o que indica que o item não deve crescer, e são aceitos apenas valores numéricos positivos.*/
+
+    /*Flex-shrink -> Esta propriedade define a proporção com que um item deve encolher caso seja necessário.
+     Por padrão seu valor é 0, o que indica que o item não deve encolher, e são aceitos apenas valores numéricos positivos. */
+
+    /* Dois valores: flex-grow | flex-basis -> Define a largura inicial do elemento. A largura do elemento é flexível, 
+    podendo aumentar caso não haja quebra de linha, mas também a largura pode ser reduzida caso outro elemento a force. */
+    
+    /* Três valores: flex-grow | flex-shrink | flex-basis */
+    flex: 1 1 200px; /* tamanho do flex */
+    border: 1px solid;
+    width: 50px;
+    height: 50px;    
+    display: flex;
+    justify-content: center; /* Declando display flex alinha o item pelo top */
+    align-items: center  /* Declando display flex alinha o item pelo centro */
+
+}
+
+.item2 {
+    flex: 1 1 400px;
+}

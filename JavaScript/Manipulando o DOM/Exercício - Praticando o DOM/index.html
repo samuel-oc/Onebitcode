@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="imovel.js"></script>
+    <script src="app.js"></script>
+</head>
+<style>
+    body {
+        margin-top: 2%;
+        text-align: center;
+    }
+
+    form label {
+        font-weight: bold;
+    }
+
+    fieldset {
+        width: 300px;
+        margin-top: 4%;
+        margin-left: 40%;
+    }
+
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 80%;
+        margin-top: 4%;
+        margin-left: 10%;
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+</style>
+
+<body>
+    <h1>Imobiliária Dream House</h1>
+    <fieldset id="formulario">
+        <form onsubmit="cadastrarImovel()">
+            <p>
+            <h3>Formulário de cadastro</h3>
+            </p>
+            <p>
+                <label>Tipo: </label>
+                <input type="radio" value="Casa" name="tipo"> Casa
+                <input type="radio" value="Apartamento" name="tipo"> Apartamento
+            </p>
+            <p>
+                <label>Área: </label>
+                <input type="text" name="area">
+            </p>
+            <p>
+                <label>Status: </label>
+                <input type="radio" value="Alugado" name="status"> Alugado
+                <input type="radio" value="Disponível" name="status"> Disponível
+            </p>
+            <p>
+                <button type="submit">Cadastrar</button>
+            </p>
+        </form>
+    </fieldset>
+
+    <div id="lista">
+        <table id="tabela">
+            <tr>
+                <th colspan="4">Imóveis</th>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <th>Tipo</th>
+                <th>Área</th>
+                <th> - </th>
+            </tr>
+            <div>
+               
+            </div>
+        </table>
+    </div>
+</body>
+
+</html>

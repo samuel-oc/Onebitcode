@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Source+Sans+Pro:wght@300&display=swap');
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: Patrick Hand;
+}
+
+p{
+    font-family: Source Sans Pro;
+    font-size: 20px;
+}
+
+.btn{
+    width: 125px;
+    padding: 10px 0px;
+    background-color: $color4;
+    color: $color2;
+    border: 0px;
+
+    &:hover{
+        background-color: $color5;
+    }
+}
+
+@mixin text-style($color, $font-size) {
+        color: $color;
+        font-size: $font-size;
+}
+    

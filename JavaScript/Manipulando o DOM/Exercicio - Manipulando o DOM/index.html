@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+
+    <style>
+        caption {
+            margin-top: 10%;
+        }
+        .tabela {
+            border:1px solid #949494;
+            border-collapse:collapse;
+            padding:5px;
+            width: 100%;
+        }
+        .tabela th {
+            border:1px solid #949494;
+            padding:5px;
+            background:#F0F0F0;
+        }
+        .tabela td {
+            border:1px solid #949494;
+            text-align:center;
+            padding:5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cadastro">     
+            <label>Logradouro: </label>  
+            <input type="text" name="Logradouro">
+            <label>Número: </label>
+            <input type="text" name="numero">
+            <label>Bairro: </label>
+            <input type="text" name="bairro">
+            <label>Cidade: </label>
+            <input type="text" name="cidade">
+            <label>Área da casa: </label>
+            <input type="text" name="areaCasa">
+            <button id="adicionar" onclick="addCasa()">Adicionar</button>   
+    </div>
+
+    <div id="lista">
+       
+    </div>
+
+   <!--  <form id="listaCasas">        
+        <table class="tabela">
+            <caption>Lista de Casas</caption>
+            <thead>
+            <tr>
+                <th>Código</th>
+                <th>Número</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>Área da casa</th>
+            </tr>
+            </thead>
+            <tbody id="lista">
+            <tr>
+                <td>1</td>
+                <td>30</td>
+                <td>Centro</td>
+                <td>Teófilo Otoni</td>
+                <td>50m²</td>
+            </tr>            
+            </tbody>
+        </table>
+    </form> -->
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.btn, .btn-amarelo {
+  width: 125px;
+  padding: 10px 0px;
+  border-radius: 20px;
+  display: block;
+  margin-top: 10px;
+}
+.btn.btn-roxo, .btn-roxo.btn-amarelo {
+  background-color: purple;
+  color: white;
+}
+.btn#btn-azul, #btn-azul.btn-amarelo {
+  background-color: blue;
+  color: white;
+}
+
+.btn-amarelo {
+  background-color: yellow;
+}
+
+.texts h3 {
+  color: blue;
+  font-size: 50px;
+  font-family: Arial;
+}
+.texts p {
+  color: rgba(12, 94, 87, 0.548);
+  font-size: 20px;
+  font-family: Cursive;
+}
+
+.classe1 ul {
+  background-color: red;
+}
+.classe1 li {
+  background-color: blue;
+}
+.classe1 li:hover {
+  background-color: aqua;
+}
+.classe1 button {
+  background-color: green;
+  cursor: pointer;
+}
+.classe1 button:hover {
+  background-color: red;
+  transition: 500ms;
+}
+
+/*# sourceMappingURL=style.css.map */
